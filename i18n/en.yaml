@@ -71,3 +71,9 @@ footer:
 
     designedBy:
         other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
+
+caution: Caution
+important: Important
+note: Note
+tip: Tip
+warning: Warning
