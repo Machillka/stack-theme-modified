@@ -20,8 +20,8 @@
 
                     <img src="{{ $Permalink }}"
                         {{ with $Srcset }}srcset="{{ . }}"{{ end }}
-                        width="{{ $Width }}" 
-                        height="{{ $Height }}" 
+                        width="{{ $Width }}"
+                        height="{{ $Height }}"
                         loading="lazy"
                         alt="Featured image of post {{ .Title }}" />
                 {{ else }}

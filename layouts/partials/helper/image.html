@@ -12,7 +12,6 @@
         {{ $result = merge $result (dict "permalink" $imageValue) }}
     {{ else }}
         {{ $pageResourceImage := .Context.Resources.GetMatch (printf "%s" ($imageValue | safeURL)) }}
-        
         {{ if $pageResourceImage }}
             <!-- If image is found under page bundle -->
             {{ $result = merge $result (dict "permalink" $pageResourceImage.RelPermalink) }}
